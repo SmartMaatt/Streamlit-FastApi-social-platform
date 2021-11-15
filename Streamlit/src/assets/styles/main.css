@@ -1,0 +1,44 @@
+.block-container > div:first-child > div:nth-child(2) > div.css-rncmk8 {
+    align-items: flex-end;
+}
+
+
+/*>>> Main menu styles <<<*/
+div.row-widget.stRadio > div {
+    flex-direction:row;
+}
+
+div.row-widget.stRadio > div > label {
+    padding-right: 15px;
+}
+
+div.row-widget.stRadio > label {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.block-container > div:first-child > div:nth-child(2) > div.css-rncmk8 > div.css-keje6w:nth-child(1)
+{
+    width: calc(70% - 1rem);
+    flex: 1 1 calc(70% - 1rem);
+}
+
+.block-container > div:first-child > div:nth-child(2) > div.css-rncmk8 > div.css-keje6w:nth-child(2)
+{
+    width: calc(30% - 1rem);
+    flex: 1 1 calc(30% - 1rem);
+}
+
+/*Log out button margining*/
+.block-container > div:first-child > div:nth-child(2) > div.css-rncmk8 > div.css-keje6w:nth-child(2) > div:first-child {
+    float: right;
+    margin-right: 80px;
+}
+
+@media only screen and (max-width: 640px) {
+    .block-container > div:first-child > div:nth-child(2) > div.css-rncmk8 > div.css-keje6w:nth-child(2) > div:first-child {
+        float: left;
+        margin-right: 0;
+    }
+}

@@ -2,5 +2,3 @@ pyrebase4
 streamlit~=1.1.0
 requests~=2.24.0
 requests-toolbelt==0.9.1
-Pillow~=8.4.0
-openpyxl

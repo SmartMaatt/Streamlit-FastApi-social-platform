@@ -9,8 +9,9 @@ def login(email, password, db, auth, reset_session):
         try:
             user = auth.sign_in_with_email_and_password(email, password)
             st.session_state.logged = True
+            st.session_state.user = user
             st.session_state.username = db.child('Users').child(user['localId']).child('Data/Handle').get(user['idToken']).val()
-            return user
+            st.experimental_rerun()
         except (TypeError, requests.exceptions.HTTPError):
             st.error(f'Incorrect user or password!')
             reset_session()

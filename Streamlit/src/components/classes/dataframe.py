@@ -67,7 +67,7 @@ class Dataframe:
                     self.user['idToken']).val() + ", "
                  for collaborator_id in self.collaborators.keys()
                  ])
-            collaborators = collaborators[:-1]
+            collaborators = collaborators[:-2]
         else:
             collaborators = "None"
 
